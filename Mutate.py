@@ -65,8 +65,8 @@ def mutate_text():
                 print(tokens[i+1]," replaced with ", w)
                 tokens[i+1] = w
     print("Modified----")
-    spun_text = " ".join(tokens)
-    print(spun_text.replace(" .",".").replace(" ,",",").replace(" !","!").replace(" '","'").replace("' ' ","``").replace(" (","(").replace(" )",")"))
+    modified_text = " ".join(tokens)
+    print(modified_text.replace(" .",".").replace(" ,",",").replace(" !","!").replace(" '","'").replace("' ' ","``").replace(" (","(").replace(" )",")"))
 
 
 mutate_text()
