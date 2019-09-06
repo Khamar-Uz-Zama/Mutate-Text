@@ -7,7 +7,7 @@
   Example:
     if text = "Tokenize the words" </br>
     then output after tokenizing will be tokens = ['Tokenize', 'the', 'words']
-3. Lemmatize them.
+3. Lemmatize them. This converts the words to their basic form or their root word. 'words' become 'word'
 
 ```
 
