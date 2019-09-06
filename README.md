@@ -5,7 +5,7 @@
 1. Lowercase the text because we know that uppercase words mean same as lowercased words.
 2. Tokenize the words.
   Example:
-    if text = "Tokenize the words"
+    if text = "Tokenize the words" </br>
     then output after tokenizing will be tokens = ['Tokenize', 'the', 'words']
 3. Lemmatize them.
 
