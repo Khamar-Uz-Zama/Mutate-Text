@@ -10,12 +10,10 @@
 3. Lemmatize them. This converts the words to their basic form or their root word. 'words' become 'word'
 
 ```
-
 for review in reviews:
     text = review.text.lower()
     tokens = word_tokenize(text) # Tokenize the sentence
     tokens = [wordNet_Lemmatizer.lemmatize(word=w) for w in tokens]
-
 ```
 ## Create Tri-Grams
 Create a dictionary of tuples. In this case, the 1st and the 3rd word are keys while the 2nd word is the value. </br>
@@ -38,7 +36,7 @@ Note that the values will be repeated so it can be used while calculating probab
 ## Add probabilities to Tri-Grams
 Using the above triGrams, we add probability based on the occurences of the word </br>
 Just divide the numbe of occurences of the word with the count of the  total number of words in that particular text. </br>
-Output:
+Output: </br>
 { </br>
 ('I', 'take'): ['can':0.20, 'should':0.20, 'will':0.6] </br>
 ('I', 'not'):  ['am':0.5,'will':0.5] </br>
